@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React,{useState,useRef} from "react";
 import {
   Platform,
   ActionSheetIOS,
@@ -11,6 +11,10 @@ import {
 } from "react-native";
 
 const OptionMenu = (props) =>{
+
+    console.log(props);
+
+    const inputRef = useRef();
     const [open,setOpen] = useState(false);
 
 
@@ -55,8 +59,9 @@ const OptionMenu = (props) =>{
             }
           );
         } else if (Platform.OS === "android") {
+
           UIManager.showPopupMenu(
-            findNodeHandle(refs.menu),
+            findNodeHandle(inputRef.current),
             options,
             () => console.log("something went wrong with the popup menu"),
             (e, i) => {
@@ -116,7 +121,7 @@ const OptionMenu = (props) =>{
         return (
         <View>
             <View>
-            <TouchableOpacity ref={"menu"} onPress={handlePressWeb}>
+            <TouchableOpacity ref={ inputRef } onPress={handlePressWeb}>
                 {component}
             </TouchableOpacity>
             </View>
@@ -126,7 +131,7 @@ const OptionMenu = (props) =>{
     } else {
         return (
         <View>
-            <TouchableOpacity ref={"menu"} onPress={handlePress}>
+            <TouchableOpacity ref={ inputRef } onPress={handlePress}>
             {component}
             </TouchableOpacity>
         </View>
