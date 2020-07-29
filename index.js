@@ -10,7 +10,7 @@ import {
   Text
 } from "react-native";
 
-const OptionMenu = () =>{
+const OptionMenu = (props) =>{
     const [open,setOpen] = useState(false);
 
 
