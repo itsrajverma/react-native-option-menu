@@ -11,9 +11,6 @@ import {
 } from "react-native";
 
 const OptionMenu = (props) =>{
-
-    console.log(props);
-
     const inputRef = useRef();
     const [open,setOpen] = useState(false);
 
