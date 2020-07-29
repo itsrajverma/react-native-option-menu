@@ -1,14 +1,28 @@
 {
   "name": "react-native-option-menu",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "A native looking options dialog for Ios and  Android",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "react-native"
+    "react-native",
+    "react-native-menu",
+    "react-native-options-menu",
+    "react-native-popup-menu",
+    "overflow",
+    "menu",
+    "options",
+    "react-component",
+    "ios",
+    "android",
+    "web"
   ],
   "author": "itsrajverma",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/itsrajverma/react-native-option-menu.git"
+  }
 }

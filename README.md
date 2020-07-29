@@ -1,7 +1,9 @@
 # react-native-option-menu
-A native looking options dialog for IOS, and Android and Web.
+A native looking options dialog for IOS, and Android and Web.  ( Functional Component)
 
 To Download, run: npm i  react-native-option-menu.
+
+Visit : https://www.npmjs.com/package/react-native-option-menu
 
 Usage example: 
 
